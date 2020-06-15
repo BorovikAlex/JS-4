@@ -22,7 +22,7 @@ document.querySelector("#laptop").addEventListener("submit", function (event) {
     viewLaptop.getMessage("Ошибка! Заполните все поля!", "warning");
     setTimeout(() => document.querySelector(".warning").remove(), 2000);
   } else {
-    if (weight > 3) {
+    if (weight > 3000 || weight < 0) {
       viewLaptop.getMessage("Вес ноутбука не должен превышать 3 кг", "warning");
       setTimeout(() => document.querySelector(".warning").remove(), 5000);
     } else {
@@ -87,7 +87,7 @@ document
       viewUltrabook.getMessage("Ошибка! Заполните все поля!", "warning");
       setTimeout(() => document.querySelector(".warning").remove(), 2000);
     } else {
-      if (weight > 1.5) {
+      if (weight > 1500 || weight < 0) {
         viewUltrabook.getMessage(
           "Вес ультрабука не должен превышать 1,5 кг",
           "warning"
