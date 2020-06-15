@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="forms">
+        <form id="laptop" class="form_laptop">
+          <h1>Ноутбук</h1>
+          <div class="form__group">
+            <input
+              type="text"
+              id="title_l"
+              class="form__input"
+              placeholder="Название "
+            />
+          </div>
+          <div class="form__group">
+            <input
+              type="number"
+              id="year_l"
+              class="form__input"
+              placeholder="Год выпуска "
+            />
+          </div>
+          <div class="form__group">
+            <input
+              type="text"
+              id="cpu_l"
+              class="form__input"
+              placeholder="Процессор "
+            />
+          </div>
+          <div class="form__group">
+            <input
+              type="number"
+              id="ram_l"
+              class="form__input"
+              placeholder="Размер оперативной памяти "
+            />
+          </div>
+          <div class="form__group">
+            <input
+              type="number"
+              id="core_l"
+              class="form__input"
+              placeholder="Количество ядер "
+            />
+          </div>
+          <div class="form__group">
+            <input
+              type="text"
+              id="caseMaterial_l"
+              class="form__input"
+              placeholder="Материал корпуса "
+            />
+          </div>
+          <div class="form__group">
+            <input
+              type="number"
+              id="weight_l"
+              class="form__input"
+              placeholder="Масса "
+            />
+          </div>
+          <div>
+            <input
+              id="btnLaptop"
+              class="btnLaptop"
+              type="submit"
+              value="Добавить"
+            />
+          </div>
+        </form>
+        <form id="ultrabook" class="form_ultrabook">
+          <h1>Ультрабук</h1>
+          <div class="form__group">
+            <input
+              type="text"
+              id="title_u"
+              class="form__input"
+              placeholder="Название "
+            />
+          </div>
+          <div class="form__group">
+            <input
+              type="number"
+              id="year_u"
+              class="form__input"
+              placeholder="Год выпуска "
+            />
+          </div>
+          <div class="form__group">
+            <input
+              type="text"
+              id="cpu_u"
+              class="form__input"
+              placeholder="Процессор "
+            />
+          </div>
+          <div class="form__group">
+            <input
+              type="number"
+              id="ram_u"
+              class="form__input"
+              placeholder="Размер оперативной памяти "
+            />
+          </div>
+          <div class="form__group">
+            <input
+              type="number"
+              id="core_u"
+              class="form__input"
+              placeholder="Количество ядер "
+            />
+          </div>
+          <div class="form__group">
+            <input
+              type="text"
+              id="bodyColor_u"
+              class="form__input"
+              placeholder="Цвет корпуса "
+            />
+          </div>
+          <div class="form__group">
+            <input
+              type="number"
+              id="weight_u"
+              class="form__input"
+              placeholder="Масса "
+            />
+          </div>
+          <div>
+            <input
+              id="btnUltrabook"
+              class="btnUltrabook"
+              type="submit"
+              value="Добавить"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <div id="list">
+          <ul class="head_title">
+            <li>Название</li>
+            <li>Процессор</li>
+            <li>ОЗУ</li>
+            <li>Количество ядер</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="myModal" class="myModal">
+        <div class="modal_content">
+          <div class="heading">
+            <h1>Общая информация</h1>
+            <span class="close">&times;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script/entity.js"></script>
+    <script src="./script/viewLaptop.js"></script>
+    <script src="./script/addInfo.js"></script>
+    <script src="./script/viewUltrabook.js"></script>
+  </body>
+</html>
