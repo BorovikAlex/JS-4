@@ -51,7 +51,7 @@ ViewLaptop.prototype.info = function (obj) {
         "\n" +
         "<p>Вес ноутбука: " +
         obj.weight +
-        " кг." +
+        " г." +
         "</p>" +
         "\n" +
         "<p>Материал корпуса: " +
