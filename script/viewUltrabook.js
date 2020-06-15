@@ -51,7 +51,7 @@ ViewUltrabook.prototype.info = function (obj) {
         "\n" +
         "<p>Вес ультрабука: " +
         obj.weight +
-        " кг." +
+        " г." +
         "</p>" +
         "\n" +
         "<p>Цвет корпуса: " +
